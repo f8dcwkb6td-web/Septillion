@@ -111,7 +111,7 @@ VWAP_WINDOW            = 10
 SL_MULTIPLIER          = 1.0
 COOLDOWN_BARS          = 10
 MAX_TRADES_PER_SESSION = 3
-FETCH_BARS             = 50_000
+FETCH_BARS             = 5000
 
 # ── Window definitions ────────────────────────────────────────────────────────
 # Each window: name, params, symbols, broker-hour window function, asian_hours
