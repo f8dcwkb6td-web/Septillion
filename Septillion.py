@@ -111,7 +111,7 @@ VWAP_WINDOW            = 10
 SL_MULTIPLIER          = 1.0
 COOLDOWN_BARS          = 10
 MAX_TRADES_PER_SESSION = 3
-FETCH_BARS             = 5000
+FETCH_BARS             = 50000
 
 # ── Window definitions ────────────────────────────────────────────────────────
 # Each window: name, params, symbols, broker-hour window function, asian_hours
@@ -130,8 +130,8 @@ WINDOWS = {
         },
         "symbols": [
             "EURJPY", "EURGBP", "EURCAD", "AUDJPY", "EURAUD",
-            "GBPJPY", "USDCHF", "USDJPY", "EURUSD", "GBPAUD",
-            "AUDUSD", "GBPUSD", "NZDUSD",
+            "GBPJPY",  "USDJPY",  "GBPAUD",
+            "AUDUSD",  "NZDUSD",
         ],
         # broker GMT+2: 15-17 = 4pm-6pm London fix window
         "window_fn": lambda h, dow: (h >= 15) & (h < 17),
